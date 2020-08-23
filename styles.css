@@ -1,0 +1,22 @@
+.dice {
+    margin-top: 5px;
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    max-width: 200px;
+}
+
+.generate {
+    margin: 0 auto;
+}
+
+.generate>p {
+    margin: 0 auto;
+}
