@@ -1,22 +1,55 @@
-.dice {
-    margin-top: 5px;
-    height: 50px;
-    width: 50px;
-    background-color: red;
-    border-radius: 5px;
+.grid-container {
+  display: flex;
+  justify-content: center;
+  border: 3px solid black;
+  padding: 10px 3px;
+  font-family: "Long Cang", cursive;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-    max-width: 200px;
+.gg-dice-1 {
+  display: block;
+  transform: scale(var(--ggs, 1));
+  position: relative;
+  box-sizing: border-box;
+  width: 22px;
+  height: 22px;
+  border: 2px solid;
+  border-radius: 3px;
+  margin: auto;
+}
+
+.gg-dice-1::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  background: currentColor;
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+  left: 7px;
+  top: 7px;
 }
 
 .generate {
-    margin: 0 auto;
+  flex: 1;
+  margin: 10px auto;
 }
 
-.generate>p {
-    margin: 0 auto;
+.generate h1 {
+  padding: 5px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stats th,
+.stats td {
+  text-align: left;
+  font-size: x-large;
+}
+
+.stats {
+  flex: 1;
 }
