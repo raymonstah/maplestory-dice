@@ -18,6 +18,24 @@
   border: 2px solid;
   border-radius: 3px;
   margin: auto;
+  color: red;
+  -webkit-animation: bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    bottom: 5px;
+  }
+  25%,
+  75% {
+    bottom: 3px;
+  }
+  50% {
+    bottom: 5px;
+  }
+  100% {
+    bottom: 10px;
+  }
 }
 
 .gg-dice-1::before {
@@ -39,15 +57,15 @@
 }
 
 .generate h1 {
-  padding: 5px;
-  margin: 0 auto;
+  margin: 10px auto;
+  padding-bottom: 10px;
   text-align: center;
 }
 
 .stats th,
 .stats td {
   text-align: left;
-  font-size: x-large;
+  font-size: 1.5rem;
 }
 
 .stats {
